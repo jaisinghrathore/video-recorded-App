@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  
+<style>
+    button {
+  margin: 0 3px 10px 0;
+  padding-left: 2px;
+  padding-right: 2px;
+  width: 99px;
+}
+
+button:last-of-type {
+  margin: 0;
+}
+
+p.borderBelow {
+  margin: 0 0 20px 0;
+  padding: 0 0 20px 0;
+}
+
+video {
+  width: 400px!important;
+  height:200px;
+
+}
+
+video:last-of-type {
+  margin: 0 0 20px 0;
+}
+
+video#gumVideo {
+  margin: 0 20px 20px 0;
+}
+
+</style>
+</head>
+<body>
+
+
+    <nav class=" navbar navbar-expand-md ">
+        <a class="navbar-brand ml-3" href="#">A V P</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <i class="fa fa-bars" aria-hidden="true" style="color:white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mr-5">
+              <a class="nav-link" href="./Profile.html">LOGIN</a>
+            </li>
+            <li class="nav-item mr-5">
+              <a class="nav-link" href="./Sign_Up.html">SIGN UP</a>
+            </li>
+            <li class="nav-item mr-5">
+              <a class="nav-link" href="./About.html">ABOUT US</a>
+            </li>    
+            <li class="nav-item mr-5">
+              <a class="nav-link" href="./Contact.html">CONTACT US</a>
+            </li>    
+            <li class="nav-item mr-2">
+              <a class="nav-link" href="./Profile.html">PROFILE</a>
+            </li> 
+          </ul>
+        </div>  
+      </nav>
+
+
+
+    <div id="container" class=" pt-5 container"> 
+
+
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6"  style="display:grid;place-items: center;border:1px solid black">
+                <video id="gum" playsinline autoplay muted></video>
+        
+                <div>
+                  <button id="start">Start camera</button>
+                  <button id="record" disabled>Record</button>
+                  <button id="play" disabled>Play</button>
+                  <button id="download" disabled>Download</button>
+                </div>
+          
+                <div>
+                  <p>
+                    Echo cancellation: <input type="checkbox" id="echoCancellation" />
+                  </p>
+                </div>
+          
+                <div>
+                  <span id="errorMsg"></span>
+                </div>
+              </div>
+              
+         
+            <div class="col-12"  style="display:grid;place-items: center;">
+                <video id="recorded" style="width:300px" playsinline loop></video>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="footer_about">
+            <p style="color:white">copyright @ 2021 - All Rights Reserved AVP.</p>
+        </div>
+
+  </body>
+  <script src="./TakeAvideo3.js"></script>
+</html>
+
+
